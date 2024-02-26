@@ -3,6 +3,8 @@
 import { useState } from 'react';
 import './App.css';
 import avcatar from './logo.svg';
+import _ from 'lodash'
+
 // 评论数据
 const list = [
   {
@@ -62,6 +64,11 @@ function App() {
   const [type, setType] = useState('hot')
   const handleTabChange = (type) => {
       setType(type)
+      if(type === "hot") {
+          setCommentList(_.orderBy(commentList,"like", 'desc'))
+      }else {
+          setCommentList(_.orderBy(commentList,"ctime", "desc"))
+      }
   }
 
   return (
