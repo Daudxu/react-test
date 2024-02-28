@@ -1,0 +1,44 @@
+{
+    "list": [
+      {
+        "rpid":3,
+        "user": {
+          "uid":"123123123",
+          "avatar": "http://toutiao.itheima.net/resources/images/98.jpg",
+          "uname":"里斯"
+        },
+        "content":"哎呦, 哎呦, 哎呦哎呦不错哦",
+        "ctime":"10-18 08:15",
+        "like":88
+      },
+      {
+        "rpid":2,
+        "user": {
+          "uid":"30009257",
+          "avatar": "http://toutiao.itheima.net/resources/images/98.jpg",
+          "uname":"wangsan"
+        },
+        "content":"哎呦,哎呦,哎呦.不错哦",
+        "ctime":"10-18 08:15",
+        "like":88
+      },
+      {
+        "rpid":1,
+        "user": {
+          "uid":"30009257",
+          "avatar": "http://toutiao.itheima.net/resources/images/98.jpg",
+          "uname":"alex"
+        },
+        "content":"哎呦,哎呦,不错哦",
+        "ctime":"10-18 08:15",
+        "like":88
+      }
+    ],
+    "comments": [
+      { "id": "1", "text": "a comment about post 1", "postId": "1" },
+      { "id": "2", "text": "another comment about post 1", "postId": "1" }
+    ],
+    "profile": {
+      "name": "typicode"
+    }
+}
