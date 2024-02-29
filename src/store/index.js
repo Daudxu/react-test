@@ -3,6 +3,7 @@ import { configureStore } from "@reduxjs/toolkit"
 // 导入子模块reducer
 import  counterReducer from './modules/counterStore'
 import  channelReducer from './modules/channelStore'
+import  foodsReducer from './modules/takeaway'
 // // 持久化
 // import { persistStore, persistReducer } from 'redux-persist'; 
 // import storage from 'redux-persist/lib/storage'; 
@@ -15,7 +16,8 @@ import  channelReducer from './modules/channelStore'
 const store = configureStore({
     reducer: {
         counter: counterReducer,
-        channel: channelReducer
+        channel: channelReducer,
+        foods: foodsReducer
     }
 })
 

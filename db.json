@@ -40,5 +40,21 @@
     ],
     "profile": {
       "name": "typicode"
+    },
+    "takeaway": {
+      "data": [
+        {
+          "id" : 1,
+          "title": "黄焖鸡米饭"
+        },
+        {
+          "id" : 2,
+          "title": "黄焖鸡米饭"
+        },
+        {
+          "id" : 3,
+          "title": "黄焖鸡米饭"
+        }
+      ]
     }
 }

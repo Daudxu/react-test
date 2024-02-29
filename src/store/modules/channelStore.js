@@ -4,11 +4,11 @@ import axios from "axios"
 const channelStore = createSlice({
     name: "channel",
     initialState: {
-        chaannelList: []
+        channelList: []
     },
     reducers: {
         setChannels (state, action) {
-            state.chaannelList = action.payload
+            state.channelList = action.payload
         }
     }
 })
@@ -16,9 +16,9 @@ const channelStore = createSlice({
 const { setChannels } = channelStore.actions
 
 const fetchChannelList = () => {
-    return async (disoatch) => {
+    return async (dispatch) => {
         const res = await axios.get("http://geek.itheima.net/v1_0/channels")
-        disoatch(setChannels(res.data.data.channels))
+        dispatch(setChannels(res.data.data.channels))
     }
 }
 
